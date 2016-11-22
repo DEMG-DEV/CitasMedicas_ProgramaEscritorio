@@ -5,29 +5,27 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CitasMedicas_ProgramaEscritorio
 {
-    public partial class Form1 : Form
+    public partial class Paciente : Form
     {
-        public Form1()
+        public Paciente()
         {
             InitializeComponent();
-            this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void toolStripButton5_Click(object sender, EventArgs e)
-        {
-            Paciente pa = new Paciente();
-            pa.MdiParent = this;
-            pa.Show();
         }
     }
 }
