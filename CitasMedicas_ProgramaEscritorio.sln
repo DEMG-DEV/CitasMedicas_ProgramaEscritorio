@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitasMedicas_ProgramaEscritorio", "CitasMedicas_ProgramaEscritorio\CitasMedicas_ProgramaEscritorio.csproj", "{1D11BC55-C770-425C-9ED1-6BF151C23721}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFAAgenda", "..\..\..\AgendaTelefonica_BD\WFAAgenda\WFAAgenda.csproj", "{9392A571-3A38-49AA-88B7-A3821F3BC13A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1D11BC55-C770-425C-9ED1-6BF151C23721}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D11BC55-C770-425C-9ED1-6BF151C23721}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D11BC55-C770-425C-9ED1-6BF151C23721}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9392A571-3A38-49AA-88B7-A3821F3BC13A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9392A571-3A38-49AA-88B7-A3821F3BC13A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9392A571-3A38-49AA-88B7-A3821F3BC13A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9392A571-3A38-49AA-88B7-A3821F3BC13A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
