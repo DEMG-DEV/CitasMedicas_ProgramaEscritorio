@@ -93,8 +93,9 @@
             // autorToolStripMenuItem
             // 
             this.autorToolStripMenuItem.Name = "autorToolStripMenuItem";
-            this.autorToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
+            this.autorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.autorToolStripMenuItem.Text = "Autor";
+            this.autorToolStripMenuItem.Click += new System.EventHandler(this.autorToolStripMenuItem_Click);
             // 
             // toolStrip1
             // 

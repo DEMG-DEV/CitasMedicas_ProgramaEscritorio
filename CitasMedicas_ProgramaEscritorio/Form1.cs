@@ -29,5 +29,11 @@ namespace CitasMedicas_ProgramaEscritorio
             pa.MdiParent = this;
             pa.Show();
         }
+
+        private void autorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Autor a = new Autor();
+            a.ShowDialog();
+        }
     }
 }
