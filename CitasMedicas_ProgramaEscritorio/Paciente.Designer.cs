@@ -156,7 +156,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
             this.button2.Image = global::CitasMedicas_ProgramaEscritorio.Properties.Resources.delete_icon;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(808, 64);
@@ -171,7 +171,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
             this.button1.Image = global::CitasMedicas_ProgramaEscritorio.Properties.Resources.add_icon;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(808, 16);
@@ -196,7 +196,7 @@
             // 
             this.textBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
             this.textBox13.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clPacienteBindingSource, "OtraInfoPaciente", true));
-            this.textBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
+            this.textBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
             this.textBox13.Location = new System.Drawing.Point(544, 194);
             this.textBox13.Multiline = true;
             this.textBox13.Name = "textBox13";
@@ -217,7 +217,7 @@
             // 
             this.textBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
             this.textBox12.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clPacienteBindingSource, "AlergiasPaciente", true));
-            this.textBox12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
+            this.textBox12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
             this.textBox12.Location = new System.Drawing.Point(274, 194);
             this.textBox12.Multiline = true;
             this.textBox12.Name = "textBox12";
@@ -238,7 +238,7 @@
             // 
             this.textBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
             this.textBox11.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clPacienteBindingSource, "PadCronPaciente", true));
-            this.textBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
+            this.textBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
             this.textBox11.Location = new System.Drawing.Point(7, 194);
             this.textBox11.Multiline = true;
             this.textBox11.Name = "textBox11";
@@ -259,7 +259,7 @@
             // 
             this.textBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
             this.textBox10.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clPacienteBindingSource, "PesoPaciente", true));
-            this.textBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
+            this.textBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
             this.textBox10.Location = new System.Drawing.Point(610, 134);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(100, 22);
@@ -278,7 +278,7 @@
             // 
             this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
             this.textBox9.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clPacienteBindingSource, "EstaturaPaciente", true));
-            this.textBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
+            this.textBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
             this.textBox9.Location = new System.Drawing.Point(493, 134);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(100, 22);
@@ -297,7 +297,7 @@
             // 
             this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
             this.textBox8.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clPacienteBindingSource, "EmailPaciente", true));
-            this.textBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
+            this.textBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
             this.textBox8.Location = new System.Drawing.Point(227, 134);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(250, 22);
@@ -316,7 +316,7 @@
             // 
             this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
             this.textBox7.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clPacienteBindingSource, "TelefonoPaciente", true));
-            this.textBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
+            this.textBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
             this.textBox7.Location = new System.Drawing.Point(7, 134);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(200, 22);
@@ -335,7 +335,7 @@
             // 
             this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
             this.textBox6.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clPacienteBindingSource, "DomicilioPaciente", true));
-            this.textBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
+            this.textBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
             this.textBox6.Location = new System.Drawing.Point(186, 78);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(537, 22);
@@ -354,7 +354,7 @@
             // 
             this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
             this.textBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clPacienteBindingSource, "FechaNacPaciente", true));
-            this.textBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
+            this.textBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
             this.textBox5.Location = new System.Drawing.Point(6, 78);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(160, 22);
@@ -374,7 +374,7 @@
             this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
             this.textBox4.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clPacienteBindingSource, "ApeMaternoPaciente", true));
-            this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
+            this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
             this.textBox4.Location = new System.Drawing.Point(523, 19);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(200, 22);
@@ -394,7 +394,7 @@
             this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
             this.textBox3.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clPacienteBindingSource, "ApePaternoPaciente", true));
-            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
+            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
             this.textBox3.Location = new System.Drawing.Point(300, 19);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(200, 22);
@@ -414,7 +414,7 @@
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
             this.textBox2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clPacienteBindingSource, "NombrePaciente", true));
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
+            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
             this.textBox2.Location = new System.Drawing.Point(78, 20);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(200, 22);
@@ -432,7 +432,7 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
+            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
             this.textBox1.Location = new System.Drawing.Point(7, 20);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
