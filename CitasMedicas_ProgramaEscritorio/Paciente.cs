@@ -27,5 +27,29 @@ namespace CitasMedicas_ProgramaEscritorio
         {
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ((clPaciente)this.clPacienteBindingSource[0]).insertarPaciente();
+            this.pacienteTableAdapter1.Fill(dsPaciente1.paciente);
+
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+            textBox5.Text = "";
+            textBox6.Text = "";
+            textBox7.Text = "";
+            textBox8.Text = "";
+            textBox9.Text = "";
+            textBox10.Text = "";
+            textBox11.Text = "";
+            textBox12.Text = "";
+            textBox13.Text = "";
+        }
+
+        private void Paciente_Load(object sender, EventArgs e)
+        {
+            this.clPacienteBindingSource.Add(new clPaciente());
+        }
     }
 }
