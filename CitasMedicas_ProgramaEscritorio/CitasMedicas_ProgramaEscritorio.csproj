@@ -47,17 +47,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllCitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllCitas.Designer.cs">
+      <DependentUpon>AllCitas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaCita.Designer.cs">
+      <DependentUpon>AltaCita.cs</DependentUpon>
+    </Compile>
     <Compile Include="Autor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Autor.Designer.cs">
       <DependentUpon>Autor.cs</DependentUpon>
     </Compile>
+    <Compile Include="BajaCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BajaCita.Designer.cs">
+      <DependentUpon>BajaCita.cs</DependentUpon>
+    </Compile>
     <Compile Include="clPaciente.cs" />
     <Compile Include="dsPaciente.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dsPaciente.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EditarCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarCita.Designer.cs">
+      <DependentUpon>EditarCita.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -73,8 +97,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AllCitas.resx">
+      <DependentUpon>AllCitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaCita.resx">
+      <DependentUpon>AltaCita.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Autor.resx">
       <DependentUpon>Autor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BajaCita.resx">
+      <DependentUpon>BajaCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarCita.resx">
+      <DependentUpon>EditarCita.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -131,6 +167,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Actions-list-add-user-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\export-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
