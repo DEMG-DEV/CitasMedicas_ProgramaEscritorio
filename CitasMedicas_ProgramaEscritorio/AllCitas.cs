@@ -16,6 +16,7 @@ namespace CitasMedicas_ProgramaEscritorio
         public AllCitas()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
             cargarAllCitas();
         }
 
