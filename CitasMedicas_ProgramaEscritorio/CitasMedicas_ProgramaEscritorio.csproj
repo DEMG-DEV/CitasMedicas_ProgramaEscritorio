@@ -71,7 +71,13 @@
     <Compile Include="BajaCita.Designer.cs">
       <DependentUpon>BajaCita.cs</DependentUpon>
     </Compile>
+    <Compile Include="citas_medicasDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>citas_medicasDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="clPaciente.cs" />
+    <Compile Include="ConexionMySQL.cs" />
     <Compile Include="dsPaciente.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -128,6 +134,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="citas_medicasDataSet.xsc">
+      <DependentUpon>citas_medicasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="citas_medicasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>citas_medicasDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="citas_medicasDataSet.xss">
+      <DependentUpon>citas_medicasDataSet.xsd</DependentUpon>
+    </None>
     <None Include="dsPaciente.xsc">
       <DependentUpon>dsPaciente.xsd</DependentUpon>
     </None>
