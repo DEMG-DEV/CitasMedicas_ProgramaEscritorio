@@ -33,5 +33,15 @@ namespace CitasMedicas_ProgramaEscritorio.Properties {
                 return ((string)(this["csPaciente"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;password=root;database=citas_medicas")]
+        public string csCitas {
+            get {
+                return ((string)(this["csCitas"]));
+            }
+        }
     }
 }

@@ -76,8 +76,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>citas_medicasDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="clCitas.cs" />
     <Compile Include="clPaciente.cs" />
     <Compile Include="ConexionMySQL.cs" />
+    <Compile Include="dsCitas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCitas.xsd</DependentUpon>
+    </Compile>
     <Compile Include="dsPaciente.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -144,6 +150,17 @@
     </None>
     <None Include="citas_medicasDataSet.xss">
       <DependentUpon>citas_medicasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dsCitas.xsc">
+      <DependentUpon>dsCitas.xsd</DependentUpon>
+    </None>
+    <None Include="dsCitas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCitas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsCitas.xss">
+      <DependentUpon>dsCitas.xsd</DependentUpon>
     </None>
     <None Include="dsPaciente.xsc">
       <DependentUpon>dsPaciente.xsd</DependentUpon>

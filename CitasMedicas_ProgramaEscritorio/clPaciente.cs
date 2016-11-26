@@ -206,9 +206,9 @@ namespace CitasMedicas_ProgramaEscritorio
             taPaciente.Delete((int)this.idPaciente);
         }
 
-        public void actualizarPaciente(System.Data.DataRow registro)
+        public void actualizarPaciente()
         {
-            taPaciente.Update(registro);
+            taPaciente.Update(nombrePaciente, apePaternoPaciente, apeMaternoPaciente, fechaNacPaciente, domicilioPaciente, telefonoPaciente, emailPaciente, estaturaPaciente, pesoPaciente, padCronPaciente, alergiasPaciente, otraInfoPaciente, (int)idPaciente);
         }
 
         public void vaciarRegistro(System.Data.DataRow registro)
