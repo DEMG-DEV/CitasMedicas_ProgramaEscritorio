@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -50,6 +51,25 @@ namespace CitasMedicas_ProgramaEscritorio
         private void Paciente_Load(object sender, EventArgs e)
         {
             this.clPacienteBindingSource.Add(new clPaciente());
+            obtenerFolio();
+        }
+
+        private void obtenerFolio()
+        {
+            ConexionMySQL conexion = new ConexionMySQL();
+            try
+            {
+                string Query = "SELECT MAX(idPaciente) FROM paciente;";
+                MySqlDataAdapter adapter = conexion.conexionGetData(Query);
+                DataTable datos = new DataTable();
+                adapter.Fill(datos);
+
+                textBox1.Text = Convert.ToString((Convert.ToInt32(datos.Rows[0][0].ToString()) + 1));
+                conexion.conexionClose();
+            }
+            catch (Exception ex)
+            {
+            }
         }
     }
 }

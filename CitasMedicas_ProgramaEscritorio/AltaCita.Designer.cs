@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -54,9 +55,17 @@
             this.label15 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.dsCitas1 = new CitasMedicas_ProgramaEscritorio.dsCitas();
+            this.citasTableAdapter1 = new CitasMedicas_ProgramaEscritorio.dsCitasTableAdapters.citasTableAdapter();
+            this.dsPaciente1 = new CitasMedicas_ProgramaEscritorio.dsPaciente();
+            this.pacienteTableAdapter1 = new CitasMedicas_ProgramaEscritorio.dsPacienteTableAdapters.pacienteTableAdapter();
+            this.clCitasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dsCitas1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsPaciente1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clCitasBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -129,6 +138,7 @@
             this.button3.Text = "Buscar";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label4
             // 
@@ -186,6 +196,7 @@
             this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
             this.textBox2.Location = new System.Drawing.Point(78, 20);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(200, 22);
             this.textBox2.TabIndex = 2;
             // 
@@ -201,6 +212,7 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clCitasBindingSource, "IdPaciente", true));
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
             this.textBox1.Location = new System.Drawing.Point(7, 20);
             this.textBox1.Name = "textBox1";
@@ -219,6 +231,8 @@
             // textBox8
             // 
             this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.textBox8.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clCitasBindingSource, "HospitalCita", true));
+            this.textBox8.Enabled = false;
             this.textBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
             this.textBox8.Location = new System.Drawing.Point(541, 21);
             this.textBox8.Name = "textBox8";
@@ -237,6 +251,8 @@
             // textBox7
             // 
             this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.textBox7.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clCitasBindingSource, "ConsultorioCita", true));
+            this.textBox7.Enabled = false;
             this.textBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
             this.textBox7.Location = new System.Drawing.Point(366, 21);
             this.textBox7.Name = "textBox7";
@@ -255,6 +271,8 @@
             // textBox6
             // 
             this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.textBox6.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clCitasBindingSource, "HoraCita", true));
+            this.textBox6.Enabled = false;
             this.textBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
             this.textBox6.Location = new System.Drawing.Point(186, 21);
             this.textBox6.Name = "textBox6";
@@ -273,6 +291,8 @@
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.textBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clCitasBindingSource, "FechaCita", true));
+            this.textBox5.Enabled = false;
             this.textBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
             this.textBox5.Location = new System.Drawing.Point(6, 21);
             this.textBox5.Name = "textBox5";
@@ -316,6 +336,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.button2.Enabled = false;
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
             this.button2.Image = global::CitasMedicas_ProgramaEscritorio.Properties.Resources.delete_icon;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -326,10 +347,12 @@
             this.button2.Text = "Cancelar";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.button1.Enabled = false;
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
             this.button1.Image = global::CitasMedicas_ProgramaEscritorio.Properties.Resources.add_icon;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -342,6 +365,28 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // dsCitas1
+            // 
+            this.dsCitas1.DataSetName = "dsCitas";
+            this.dsCitas1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // citasTableAdapter1
+            // 
+            this.citasTableAdapter1.ClearBeforeFill = true;
+            // 
+            // dsPaciente1
+            // 
+            this.dsPaciente1.DataSetName = "dsPaciente";
+            this.dsPaciente1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pacienteTableAdapter1
+            // 
+            this.pacienteTableAdapter1.ClearBeforeFill = true;
+            // 
+            // clCitasBindingSource
+            // 
+            this.clCitasBindingSource.DataSource = typeof(CitasMedicas_ProgramaEscritorio.clCitas);
+            // 
             // AltaCita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -353,12 +398,16 @@
             this.Controls.Add(this.menuStrip1);
             this.Name = "AltaCita";
             this.Text = "AltaCita";
+            this.Load += new System.EventHandler(this.AltaCita_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dsCitas1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsPaciente1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clCitasBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -392,6 +441,11 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.BindingSource clCitasBindingSource;
+        private dsCitas dsCitas1;
+        private dsCitasTableAdapters.citasTableAdapter citasTableAdapter1;
+        private dsPaciente dsPaciente1;
+        private dsPacienteTableAdapters.pacienteTableAdapter pacienteTableAdapter1;
         //private citas_medicasDataSetTableAdapters.citasTableAdapter citasTableAdapter2;
     }
 }
