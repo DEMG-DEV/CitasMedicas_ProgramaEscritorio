@@ -43,13 +43,6 @@ namespace CitasMedicas_ProgramaEscritorio
             allc.Show();
         }
 
-        private void toolStripButton3_Click(object sender, EventArgs e)
-        {
-            EditarCita ec = new EditarCita();
-            ec.MdiParent = this;
-            ec.Show();
-        }
-
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
             BajaCita bc = new BajaCita();

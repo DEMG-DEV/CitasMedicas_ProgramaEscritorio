@@ -84,12 +84,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dsPaciente.xsd</DependentUpon>
     </Compile>
-    <Compile Include="EditarCita.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EditarCita.Designer.cs">
-      <DependentUpon>EditarCita.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,9 +109,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BajaCita.resx">
       <DependentUpon>BajaCita.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EditarCita.resx">
-      <DependentUpon>EditarCita.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
