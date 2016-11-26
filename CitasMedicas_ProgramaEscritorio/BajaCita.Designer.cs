@@ -51,13 +51,13 @@
             this.citasTableAdapter1 = new CitasMedicas_ProgramaEscritorio.dsCitasTableAdapters.citasTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.citasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clCitasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idCitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idPacienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaCitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.horaCitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.consultorioCitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hospitalCitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clCitasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dsCitas1)).BeginInit();
@@ -99,7 +99,6 @@
             this.textBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
             this.textBox5.Location = new System.Drawing.Point(13, 49);
             this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(160, 22);
             this.textBox5.TabIndex = 12;
             // 
@@ -126,6 +125,7 @@
             this.button2.Text = "Actualizar";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label7
             // 
@@ -158,7 +158,6 @@
             this.textBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
             this.textBox6.Location = new System.Drawing.Point(193, 49);
             this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(160, 22);
             this.textBox6.TabIndex = 14;
             // 
@@ -187,7 +186,6 @@
             this.textBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
             this.textBox8.Location = new System.Drawing.Point(548, 49);
             this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(160, 22);
             this.textBox8.TabIndex = 18;
             // 
@@ -198,7 +196,6 @@
             this.textBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
             this.textBox7.Location = new System.Drawing.Point(373, 49);
             this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
             this.textBox7.Size = new System.Drawing.Size(160, 22);
             this.textBox7.TabIndex = 16;
             // 
@@ -299,10 +296,6 @@
             this.citasBindingSource.DataMember = "citas";
             this.citasBindingSource.DataSource = this.dsCitas1;
             // 
-            // clCitasBindingSource
-            // 
-            this.clCitasBindingSource.DataSource = typeof(CitasMedicas_ProgramaEscritorio.clCitas);
-            // 
             // idCitaDataGridViewTextBoxColumn
             // 
             this.idCitaDataGridViewTextBoxColumn.DataPropertyName = "idCita";
@@ -345,6 +338,10 @@
             this.hospitalCitaDataGridViewTextBoxColumn.HeaderText = "Hospital";
             this.hospitalCitaDataGridViewTextBoxColumn.Name = "hospitalCitaDataGridViewTextBoxColumn";
             this.hospitalCitaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // clCitasBindingSource
+            // 
+            this.clCitasBindingSource.DataSource = typeof(CitasMedicas_ProgramaEscritorio.clCitas);
             // 
             // BajaCita
             // 
