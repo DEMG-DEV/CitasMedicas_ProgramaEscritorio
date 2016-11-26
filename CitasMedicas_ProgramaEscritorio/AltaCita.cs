@@ -21,5 +21,11 @@ namespace CitasMedicas_ProgramaEscritorio
         {
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //((clCitas)this.clCitasBindingSource[0]).altaCita();
+            //this.citasTableAdapter2.Fill();
+        }
     }
 }

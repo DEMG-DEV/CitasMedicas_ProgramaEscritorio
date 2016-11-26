@@ -340,6 +340,7 @@
             this.button1.Text = "Guardar";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // AltaCita
             // 
@@ -391,5 +392,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label15;
+        //private citas_medicasDataSetTableAdapters.citasTableAdapter citasTableAdapter2;
     }
 }
