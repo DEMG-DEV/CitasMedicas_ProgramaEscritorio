@@ -32,25 +32,23 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AllCitas));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.dsCitas = new CitasMedicas_ProgramaEscritorio.dsCitas();
+            this.citasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.citasTableAdapter = new CitasMedicas_ProgramaEscritorio.dsCitasTableAdapters.citasTableAdapter();
             this.idCitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idPacienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaCitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.horaCitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.consultorioCitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hospitalCitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.citasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dsCitas1 = new CitasMedicas_ProgramaEscritorio.dsCitas();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.citasTableAdapter1 = new CitasMedicas_ProgramaEscritorio.dsCitasTableAdapters.citasTableAdapter();
-            this.citasBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.citasBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dsCitas1)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.citasBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsCitas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.citasBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -70,7 +68,7 @@
             this.horaCitaDataGridViewTextBoxColumn,
             this.consultorioCitaDataGridViewTextBoxColumn,
             this.hospitalCitaDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.citasBindingSource1;
+            this.dataGridView1.DataSource = this.citasBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 27);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -84,59 +82,6 @@
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.Size = new System.Drawing.Size(832, 294);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // idCitaDataGridViewTextBoxColumn
-            // 
-            this.idCitaDataGridViewTextBoxColumn.DataPropertyName = "idCita";
-            this.idCitaDataGridViewTextBoxColumn.HeaderText = "Folio";
-            this.idCitaDataGridViewTextBoxColumn.Name = "idCitaDataGridViewTextBoxColumn";
-            this.idCitaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idCitaDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // idPacienteDataGridViewTextBoxColumn
-            // 
-            this.idPacienteDataGridViewTextBoxColumn.DataPropertyName = "idPaciente";
-            this.idPacienteDataGridViewTextBoxColumn.HeaderText = "NSS Paciente";
-            this.idPacienteDataGridViewTextBoxColumn.Name = "idPacienteDataGridViewTextBoxColumn";
-            this.idPacienteDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // fechaCitaDataGridViewTextBoxColumn
-            // 
-            this.fechaCitaDataGridViewTextBoxColumn.DataPropertyName = "fechaCita";
-            this.fechaCitaDataGridViewTextBoxColumn.HeaderText = "Fecha";
-            this.fechaCitaDataGridViewTextBoxColumn.Name = "fechaCitaDataGridViewTextBoxColumn";
-            this.fechaCitaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // horaCitaDataGridViewTextBoxColumn
-            // 
-            this.horaCitaDataGridViewTextBoxColumn.DataPropertyName = "horaCita";
-            this.horaCitaDataGridViewTextBoxColumn.HeaderText = "Hora";
-            this.horaCitaDataGridViewTextBoxColumn.Name = "horaCitaDataGridViewTextBoxColumn";
-            this.horaCitaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // consultorioCitaDataGridViewTextBoxColumn
-            // 
-            this.consultorioCitaDataGridViewTextBoxColumn.DataPropertyName = "consultorioCita";
-            this.consultorioCitaDataGridViewTextBoxColumn.HeaderText = "Consultorio";
-            this.consultorioCitaDataGridViewTextBoxColumn.Name = "consultorioCitaDataGridViewTextBoxColumn";
-            this.consultorioCitaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // hospitalCitaDataGridViewTextBoxColumn
-            // 
-            this.hospitalCitaDataGridViewTextBoxColumn.DataPropertyName = "hospitalCita";
-            this.hospitalCitaDataGridViewTextBoxColumn.HeaderText = "Hospital";
-            this.hospitalCitaDataGridViewTextBoxColumn.Name = "hospitalCitaDataGridViewTextBoxColumn";
-            this.hospitalCitaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // citasBindingSource
-            // 
-            this.citasBindingSource.DataMember = "citas";
-            this.citasBindingSource.DataSource = this.dsCitas1;
-            // 
-            // dsCitas1
-            // 
-            this.dsCitas1.DataSetName = "dsCitas";
-            this.dsCitas1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // menuStrip1
             // 
@@ -173,14 +118,61 @@
             this.toolStripMenuItem2.Text = "Salir";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
-            // citasTableAdapter1
+            // dsCitas
             // 
-            this.citasTableAdapter1.ClearBeforeFill = true;
+            this.dsCitas.DataSetName = "dsCitas";
+            this.dsCitas.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // citasBindingSource1
+            // citasBindingSource
             // 
-            this.citasBindingSource1.DataMember = "citas";
-            this.citasBindingSource1.DataSource = this.dsCitas1;
+            this.citasBindingSource.DataMember = "citas";
+            this.citasBindingSource.DataSource = this.dsCitas;
+            // 
+            // citasTableAdapter
+            // 
+            this.citasTableAdapter.ClearBeforeFill = true;
+            // 
+            // idCitaDataGridViewTextBoxColumn
+            // 
+            this.idCitaDataGridViewTextBoxColumn.DataPropertyName = "idCita";
+            this.idCitaDataGridViewTextBoxColumn.HeaderText = "idCita";
+            this.idCitaDataGridViewTextBoxColumn.Name = "idCitaDataGridViewTextBoxColumn";
+            this.idCitaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // idPacienteDataGridViewTextBoxColumn
+            // 
+            this.idPacienteDataGridViewTextBoxColumn.DataPropertyName = "idPaciente";
+            this.idPacienteDataGridViewTextBoxColumn.HeaderText = "idPaciente";
+            this.idPacienteDataGridViewTextBoxColumn.Name = "idPacienteDataGridViewTextBoxColumn";
+            this.idPacienteDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // fechaCitaDataGridViewTextBoxColumn
+            // 
+            this.fechaCitaDataGridViewTextBoxColumn.DataPropertyName = "fechaCita";
+            this.fechaCitaDataGridViewTextBoxColumn.HeaderText = "fechaCita";
+            this.fechaCitaDataGridViewTextBoxColumn.Name = "fechaCitaDataGridViewTextBoxColumn";
+            this.fechaCitaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // horaCitaDataGridViewTextBoxColumn
+            // 
+            this.horaCitaDataGridViewTextBoxColumn.DataPropertyName = "horaCita";
+            this.horaCitaDataGridViewTextBoxColumn.HeaderText = "horaCita";
+            this.horaCitaDataGridViewTextBoxColumn.Name = "horaCitaDataGridViewTextBoxColumn";
+            this.horaCitaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // consultorioCitaDataGridViewTextBoxColumn
+            // 
+            this.consultorioCitaDataGridViewTextBoxColumn.DataPropertyName = "consultorioCita";
+            this.consultorioCitaDataGridViewTextBoxColumn.HeaderText = "consultorioCita";
+            this.consultorioCitaDataGridViewTextBoxColumn.Name = "consultorioCitaDataGridViewTextBoxColumn";
+            this.consultorioCitaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // hospitalCitaDataGridViewTextBoxColumn
+            // 
+            this.hospitalCitaDataGridViewTextBoxColumn.DataPropertyName = "hospitalCita";
+            this.hospitalCitaDataGridViewTextBoxColumn.HeaderText = "hospitalCita";
+            this.hospitalCitaDataGridViewTextBoxColumn.Name = "hospitalCitaDataGridViewTextBoxColumn";
+            this.hospitalCitaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // AllCitas
             // 
@@ -193,12 +185,12 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AllCitas";
             this.Text = "Citas";
+            this.Load += new System.EventHandler(this.AllCitas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.citasBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dsCitas1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.citasBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsCitas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.citasBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,15 +203,14 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private dsCitas dsCitas;
+        private System.Windows.Forms.BindingSource citasBindingSource;
+        private dsCitasTableAdapters.citasTableAdapter citasTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idCitaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idPacienteDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaCitaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn horaCitaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn consultorioCitaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn hospitalCitaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource citasBindingSource;
-        private dsCitas dsCitas1;
-        private dsCitasTableAdapters.citasTableAdapter citasTableAdapter1;
-        private System.Windows.Forms.BindingSource citasBindingSource1;
     }
 }

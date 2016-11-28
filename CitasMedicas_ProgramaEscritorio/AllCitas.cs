@@ -23,5 +23,12 @@ namespace CitasMedicas_ProgramaEscritorio
         {
             this.Close();
         }
+
+        private void AllCitas_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'dsCitas.citas' table. You can move, or remove it, as needed.
+            this.citasTableAdapter.Fill(this.dsCitas.citas);
+
+        }
     }
 }
