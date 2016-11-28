@@ -56,5 +56,10 @@ namespace CitasMedicas_ProgramaEscritorio
             ((clCitas)this.clCitasBindingSource[0]).actualizarCita();
             this.citasTableAdapter1.Fill(this.dsCitas1.citas);
         }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

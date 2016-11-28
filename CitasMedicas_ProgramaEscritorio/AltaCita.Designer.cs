@@ -399,7 +399,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AltaCita";
-            this.Text = "AltaCita";
+            this.Text = "Nueva Cita";
             this.Load += new System.EventHandler(this.AltaCita_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

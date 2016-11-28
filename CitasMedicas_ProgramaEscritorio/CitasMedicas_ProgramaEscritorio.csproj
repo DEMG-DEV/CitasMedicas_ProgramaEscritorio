@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icons-Land-Vista-People-Medical-Pharmacist-Male-Light.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
@@ -183,6 +186,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\export-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icons-Land-Vista-People-Medical-Pharmacist-Male-Light.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

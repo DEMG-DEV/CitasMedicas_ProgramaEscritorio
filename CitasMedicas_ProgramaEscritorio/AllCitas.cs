@@ -17,6 +17,11 @@ namespace CitasMedicas_ProgramaEscritorio
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
-        }        
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
