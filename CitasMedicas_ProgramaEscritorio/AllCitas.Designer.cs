@@ -135,42 +135,43 @@
             // idCitaDataGridViewTextBoxColumn
             // 
             this.idCitaDataGridViewTextBoxColumn.DataPropertyName = "idCita";
-            this.idCitaDataGridViewTextBoxColumn.HeaderText = "idCita";
+            this.idCitaDataGridViewTextBoxColumn.HeaderText = "Folio";
             this.idCitaDataGridViewTextBoxColumn.Name = "idCitaDataGridViewTextBoxColumn";
             this.idCitaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idCitaDataGridViewTextBoxColumn.Width = 50;
             // 
             // idPacienteDataGridViewTextBoxColumn
             // 
             this.idPacienteDataGridViewTextBoxColumn.DataPropertyName = "idPaciente";
-            this.idPacienteDataGridViewTextBoxColumn.HeaderText = "idPaciente";
+            this.idPacienteDataGridViewTextBoxColumn.HeaderText = "NSS Paciente";
             this.idPacienteDataGridViewTextBoxColumn.Name = "idPacienteDataGridViewTextBoxColumn";
             this.idPacienteDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // fechaCitaDataGridViewTextBoxColumn
             // 
             this.fechaCitaDataGridViewTextBoxColumn.DataPropertyName = "fechaCita";
-            this.fechaCitaDataGridViewTextBoxColumn.HeaderText = "fechaCita";
+            this.fechaCitaDataGridViewTextBoxColumn.HeaderText = "Fecha";
             this.fechaCitaDataGridViewTextBoxColumn.Name = "fechaCitaDataGridViewTextBoxColumn";
             this.fechaCitaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // horaCitaDataGridViewTextBoxColumn
             // 
             this.horaCitaDataGridViewTextBoxColumn.DataPropertyName = "horaCita";
-            this.horaCitaDataGridViewTextBoxColumn.HeaderText = "horaCita";
+            this.horaCitaDataGridViewTextBoxColumn.HeaderText = "Hora";
             this.horaCitaDataGridViewTextBoxColumn.Name = "horaCitaDataGridViewTextBoxColumn";
             this.horaCitaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // consultorioCitaDataGridViewTextBoxColumn
             // 
             this.consultorioCitaDataGridViewTextBoxColumn.DataPropertyName = "consultorioCita";
-            this.consultorioCitaDataGridViewTextBoxColumn.HeaderText = "consultorioCita";
+            this.consultorioCitaDataGridViewTextBoxColumn.HeaderText = "Consultorio";
             this.consultorioCitaDataGridViewTextBoxColumn.Name = "consultorioCitaDataGridViewTextBoxColumn";
             this.consultorioCitaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // hospitalCitaDataGridViewTextBoxColumn
             // 
             this.hospitalCitaDataGridViewTextBoxColumn.DataPropertyName = "hospitalCita";
-            this.hospitalCitaDataGridViewTextBoxColumn.HeaderText = "hospitalCita";
+            this.hospitalCitaDataGridViewTextBoxColumn.HeaderText = "Hospital";
             this.hospitalCitaDataGridViewTextBoxColumn.Name = "hospitalCitaDataGridViewTextBoxColumn";
             this.hospitalCitaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
