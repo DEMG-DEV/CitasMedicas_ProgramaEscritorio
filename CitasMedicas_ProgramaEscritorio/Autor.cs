@@ -14,7 +14,7 @@ namespace CitasMedicas_ProgramaEscritorio
     {
         private string getAutores()
         {
-            return "Autor:\nDavid Enrique Mendez Guardado\nProfesor:\nAntonio Mata Maravilla";
+            return "Autor:\nDavid Enrique Mendez Guardado\n Raúl Salazar Escareño\nProfesor:\nAntonio Mata Maravilla";
         }
         public Autor()
         {
