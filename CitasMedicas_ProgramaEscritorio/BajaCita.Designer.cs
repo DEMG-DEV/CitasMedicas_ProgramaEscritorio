@@ -29,7 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BajaCita));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.clCitasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -45,25 +50,22 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.dsCitas1 = new CitasMedicas_ProgramaEscritorio.dsCitas();
             this.citasTableAdapter1 = new CitasMedicas_ProgramaEscritorio.dsCitasTableAdapters.citasTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.citasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idCitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idPacienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaCitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.horaCitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.consultorioCitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hospitalCitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clCitasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.citasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clCitasBindingSource)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dsCitas1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.citasBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clCitasBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -91,6 +93,29 @@
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos Cita";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(119, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(74, 16);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "Folio Cita";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clCitasBindingSource, "IdCita", true));
+            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
+            this.textBox1.Location = new System.Drawing.Point(13, 21);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 34;
+            // 
+            // clCitasBindingSource
+            // 
+            this.clCitasBindingSource.DataSource = typeof(CitasMedicas_ProgramaEscritorio.clCitas);
             // 
             // textBox5
             // 
@@ -242,25 +267,6 @@
             this.toolStripMenuItem2.Size = new System.Drawing.Size(96, 22);
             this.toolStripMenuItem2.Text = "Salir";
             // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
-            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clCitasBindingSource, "IdCita", true));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(181)))), ((int)(((byte)(181)))));
-            this.textBox1.Location = new System.Drawing.Point(13, 21);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 34;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(119, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 16);
-            this.label1.TabIndex = 35;
-            this.label1.Text = "Folio Cita";
-            // 
             // dsCitas1
             // 
             this.dsCitas1.DataSetName = "dsCitas";
@@ -275,6 +281,7 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idCitaDataGridViewTextBoxColumn,
@@ -287,14 +294,17 @@
             this.dataGridView1.Location = new System.Drawing.Point(13, 198);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.Size = new System.Drawing.Size(735, 242);
             this.dataGridView1.TabIndex = 7;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
-            // 
-            // citasBindingSource
-            // 
-            this.citasBindingSource.DataMember = "citas";
-            this.citasBindingSource.DataSource = this.dsCitas1;
             // 
             // idCitaDataGridViewTextBoxColumn
             // 
@@ -339,9 +349,10 @@
             this.hospitalCitaDataGridViewTextBoxColumn.Name = "hospitalCitaDataGridViewTextBoxColumn";
             this.hospitalCitaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // clCitasBindingSource
+            // citasBindingSource
             // 
-            this.clCitasBindingSource.DataSource = typeof(CitasMedicas_ProgramaEscritorio.clCitas);
+            this.citasBindingSource.DataMember = "citas";
+            this.citasBindingSource.DataSource = this.dsCitas1;
             // 
             // BajaCita
             // 
@@ -352,17 +363,18 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BajaCita";
             this.Text = "BajaCita";
             this.Load += new System.EventHandler(this.BajaCita_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clCitasBindingSource)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dsCitas1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.citasBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clCitasBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

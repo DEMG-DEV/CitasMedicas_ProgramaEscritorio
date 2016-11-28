@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="CitasMedicas_ProgramaEscritorio.AllCitas">
+    <Position X="3.75" Y="0.5" Width="2.75" />
+    <Members>
+      <Field Name="components" Hidden="true" />
+      <Field Name="consultorioCitaDataGridViewTextBoxColumn" Hidden="true" />
+      <Field Name="dataGridView1" Hidden="true" />
+      <Field Name="fechaCitaDataGridViewTextBoxColumn" Hidden="true" />
+      <Field Name="horaCitaDataGridViewTextBoxColumn" Hidden="true" />
+      <Field Name="hospitalCitaDataGridViewTextBoxColumn" Hidden="true" />
+      <Field Name="idCitaDataGridViewTextBoxColumn" Hidden="true" />
+      <Field Name="idPacienteDataGridViewTextBoxColumn" Hidden="true" />
+      <Field Name="menuStrip1" Hidden="true" />
+      <Field Name="toolStripMenuItem1" Hidden="true" />
+      <Field Name="toolStripMenuItem2" Hidden="true" />
+      <Field Name="toolStripSeparator2" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQAAAAwKACAAAAACAACBAGACAAgAAAIAABAAAAAAAAA=</HashCode>
+      <FileName>AllCitas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CitasMedicas_ProgramaEscritorio.AltaCita">
+    <Position X="6.75" Y="0.5" Width="4" />
+    <Members>
+      <Field Name="button1" Hidden="true" />
+      <Field Name="button2" Hidden="true" />
+      <Field Name="button3" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="groupBox1" Hidden="true" />
+      <Field Name="groupBox2" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label15" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="label4" Hidden="true" />
+      <Field Name="label5" Hidden="true" />
+      <Field Name="label6" Hidden="true" />
+      <Field Name="label7" Hidden="true" />
+      <Field Name="label8" Hidden="true" />
+      <Field Name="menuStrip1" Hidden="true" />
+      <Field Name="textBox1" Hidden="true" />
+      <Field Name="textBox2" Hidden="true" />
+      <Field Name="textBox3" Hidden="true" />
+      <Field Name="textBox4" Hidden="true" />
+      <Field Name="textBox5" Hidden="true" />
+      <Field Name="textBox6" Hidden="true" />
+      <Field Name="textBox7" Hidden="true" />
+      <Field Name="textBox8" Hidden="true" />
+      <Field Name="toolStripMenuItem1" Hidden="true" />
+      <Field Name="toolStripMenuItem2" Hidden="true" />
+      <Field Name="toolStripSeparator2" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>QzAAAAgAASAAABCKAICAAEBCIIC4AAwAEHAAAAAAAIA=</HashCode>
+      <FileName>AltaCita.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CitasMedicas_ProgramaEscritorio.Autor">
+    <Position X="8" Y="9.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACAAAACAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Autor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CitasMedicas_ProgramaEscritorio.BajaCita">
+    <Position X="11" Y="0.5" Width="4.5" />
+    <Members>
+      <Field Name="button1" Hidden="true" />
+      <Field Name="button2" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="consultorioCitaDataGridViewTextBoxColumn" Hidden="true" />
+      <Field Name="dataGridView1" Hidden="true" />
+      <Field Name="fechaCitaDataGridViewTextBoxColumn" Hidden="true" />
+      <Field Name="groupBox2" Hidden="true" />
+      <Field Name="horaCitaDataGridViewTextBoxColumn" Hidden="true" />
+      <Field Name="hospitalCitaDataGridViewTextBoxColumn" Hidden="true" />
+      <Field Name="idCitaDataGridViewTextBoxColumn" Hidden="true" />
+      <Field Name="idPacienteDataGridViewTextBoxColumn" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label15" Hidden="true" />
+      <Field Name="label5" Hidden="true" />
+      <Field Name="label6" Hidden="true" />
+      <Field Name="label7" Hidden="true" />
+      <Field Name="label8" Hidden="true" />
+      <Field Name="menuStrip1" Hidden="true" />
+      <Field Name="textBox1" Hidden="true" />
+      <Field Name="textBox5" Hidden="true" />
+      <Field Name="textBox6" Hidden="true" />
+      <Field Name="textBox7" Hidden="true" />
+      <Field Name="textBox8" Hidden="true" />
+      <Field Name="toolStripMenuItem1" Hidden="true" />
+      <Field Name="toolStripMenuItem2" Hidden="true" />
+      <Field Name="toolStripSeparator2" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>RxAAAgwKASAAABCCAACBAGACAAgYAAIAEHAAAAAAAIA=</HashCode>
+      <FileName>BajaCita.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CitasMedicas_ProgramaEscritorio.Paciente">
+    <Position X="3.75" Y="5.5" Width="4.25" />
+    <Members>
+      <Field Name="archivoToolStripMenuItem" Hidden="true" />
+      <Field Name="button1" Hidden="true" />
+      <Field Name="button2" Hidden="true" />
+      <Field Name="groupBox1" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label10" Hidden="true" />
+      <Field Name="label11" Hidden="true" />
+      <Field Name="label12" Hidden="true" />
+      <Field Name="label13" Hidden="true" />
+      <Field Name="label14" Hidden="true" />
+      <Field Name="label15" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="label4" Hidden="true" />
+      <Field Name="label5" Hidden="true" />
+      <Field Name="label6" Hidden="true" />
+      <Field Name="label7" Hidden="true" />
+      <Field Name="label8" Hidden="true" />
+      <Field Name="label9" Hidden="true" />
+      <Field Name="menuStrip1" Hidden="true" />
+      <Field Name="salirToolStripMenuItem" Hidden="true" />
+      <Field Name="textBox1" Hidden="true" />
+      <Field Name="textBox10" Hidden="true" />
+      <Field Name="textBox11" Hidden="true" />
+      <Field Name="textBox12" Hidden="true" />
+      <Field Name="textBox13" Hidden="true" />
+      <Field Name="textBox2" Hidden="true" />
+      <Field Name="textBox3" Hidden="true" />
+      <Field Name="textBox4" Hidden="true" />
+      <Field Name="textBox5" Hidden="true" />
+      <Field Name="textBox6" Hidden="true" />
+      <Field Name="textBox7" Hidden="true" />
+      <Field Name="textBox8" Hidden="true" />
+      <Field Name="textBox9" Hidden="true" />
+      <Field Name="toolStripSeparator1" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>83AAAAEAASAAABCAEoCAAABCIIAYAISAEmAAAAAAAIA=</HashCode>
+      <FileName>Paciente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CitasMedicas_ProgramaEscritorio.clCitas">
+    <Position X="0.75" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAEIARABCQACAAEAAQACAAAAAgAAAEAACABAAIA=</HashCode>
+      <FileName>clCitas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CitasMedicas_ProgramaEscritorio.clPaciente">
+    <Position X="0.75" Y="5.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAgAASAIAAUghIAwAAQAAAADBgBAR0SQAAQAggAABIA=</HashCode>
+      <FileName>clPaciente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
