@@ -44,7 +44,6 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.clCitasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label8 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -61,12 +60,13 @@
             this.citasTableAdapter1 = new CitasMedicas_ProgramaEscritorio.dsCitasTableAdapters.citasTableAdapter();
             this.dsPaciente1 = new CitasMedicas_ProgramaEscritorio.dsPaciente();
             this.pacienteTableAdapter1 = new CitasMedicas_ProgramaEscritorio.dsPacienteTableAdapters.pacienteTableAdapter();
+            this.clCitasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.clCitasBindingSource)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dsCitas1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsPaciente1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clCitasBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -219,10 +219,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(53, 22);
             this.textBox1.TabIndex = 0;
-            // 
-            // clCitasBindingSource
-            // 
-            this.clCitasBindingSource.DataSource = typeof(CitasMedicas_ProgramaEscritorio.clCitas);
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label8
             // 
@@ -388,6 +385,10 @@
             // 
             this.pacienteTableAdapter1.ClearBeforeFill = true;
             // 
+            // clCitasBindingSource
+            // 
+            this.clCitasBindingSource.DataSource = typeof(CitasMedicas_ProgramaEscritorio.clCitas);
+            // 
             // AltaCita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -405,11 +406,11 @@
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.clCitasBindingSource)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dsCitas1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsPaciente1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clCitasBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

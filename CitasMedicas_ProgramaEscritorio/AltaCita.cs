@@ -29,6 +29,8 @@ namespace CitasMedicas_ProgramaEscritorio
             this.citasTableAdapter1.Fill(dsCitas1.citas);
 
             limpiarAll();
+
+            AltaCita_Load(sender, e);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -45,8 +47,9 @@ namespace CitasMedicas_ProgramaEscritorio
                 MySqlDataAdapter adapter = conexion.conexionGetData(Query);
                 DataTable datos = new DataTable();
                 adapter.Fill(datos);
+                conexion.conexionClose();
 
-                textBox1.Text = Convert.ToString(datos.Rows[0][0].ToString());
+                //textBox1.Text = Convert.ToString(datos.Rows[0][0].ToString());
                 textBox2.Text = Convert.ToString(datos.Rows[0][1].ToString());
                 textBox3.Text = Convert.ToString(datos.Rows[0][2].ToString());
                 textBox4.Text = Convert.ToString(datos.Rows[0][3].ToString());
@@ -55,8 +58,6 @@ namespace CitasMedicas_ProgramaEscritorio
                 textBox6.Text = "";
                 textBox7.Text = "";
                 textBox8.Text = "";
-
-                conexion.conexionClose();
             }
             catch (Exception ex)
             {
@@ -101,11 +102,30 @@ namespace CitasMedicas_ProgramaEscritorio
         private void button2_Click(object sender, EventArgs e)
         {
             limpiarAll();
+            AltaCita_Load(sender, e);
         }
 
         private void AltaCita_Load(object sender, EventArgs e)
         {
             this.clCitasBindingSource.Add(new clCitas());
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //Para obligar a que sólo se introduzcan números 
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (Char.IsControl(e.KeyChar)) //permitir teclas de control como retroceso 
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                //el resto de teclas pulsadas se desactivan 
+                e.Handled = true;
+            }
         }
     }
 }
