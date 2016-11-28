@@ -100,14 +100,14 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(93, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
             this.salirToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -169,9 +169,9 @@
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(717, 142);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(29, 16);
+            this.label14.Size = new System.Drawing.Size(30, 16);
             this.label14.TabIndex = 32;
-            this.label14.Text = "kg.";
+            this.label14.Text = "Kg.";
             // 
             // button2
             // 
